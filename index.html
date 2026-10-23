@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#e8e9e6">
+	<title>Biodata | Harry &amp; Arya</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main class="page-shell">
+		<header class="site-header">
+			<a class="wordmark" href="#beranda" aria-label="Halaman utama">H<span>&</span>A</a>
+			<p class="header-note">KENAL LEBIH DEKAT</p>
+		</header>
+
+		<section class="intro" id="beranda" aria-labelledby="page-title">
+			<p class="eyebrow"><span class="eyebrow-line"></span>DUA CERITA, SATU HALAMAN</p>
+			<h1 id="page-title">Halo, kami<br><span>Harry &amp; Arya.</span></h1>
+			<p class="intro-copy">Dua pribadi dengan cerita, minat, dan mimpi masing-masing. Yuk, kenalan lebih dekat.</p>
+		</section>
+
+		<section class="profiles" aria-label="Biodata Harry dan Arya">
+			<article class="profile profile-harry">
+				<div class="portrait-wrap">
+					<img class="portrait" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85" alt="Foto profil Harry" loading="lazy">
+					<span class="portrait-index">01 / 02</span>
+				</div>
+				<div class="profile-content">
+					<div class="profile-heading">
+						<div>
+							<p class="profile-label">SI PEMIKIR TENANG</p>
+							<h2>Harry<span class="name-dot">.</span></h2>
+						</div>
+						<span class="profile-mark" aria-hidden="true">H</span>
+					</div>
+					<p class="profile-summary">Suka belajar hal baru, menikmati musik, dan selalu punya rasa ingin tahu yang besar.</p>
+					<dl class="quick-facts">
+						<div><dt>Umur</dt><dd>22 tahun</dd></div>
+						<div><dt>Domisili</dt><dd>Medan, Indonesia</dd></div>
+					</dl>
+					<div class="extra-details" id="detail-harry" hidden>
+						<dl class="detail-list">
+							<div><dt>Hobi</dt><dd>Mendengarkan musik, membaca</dd></div>
+							<div><dt>Cita-cita</dt><dd>Menjadi pengembang teknologi</dd></div>
+							<div><dt>Motto</dt><dd>Terus bertumbuh, satu langkah setiap hari.</dd></div>
+						</dl>
+					</div>
+					<button class="detail-button" type="button" aria-expanded="false" aria-controls="detail-harry">
+						<span>Lihat biodata</span><span class="button-icon" aria-hidden="true">+</span>
+					</button>
+				</div>
+			</article>
+
+			<article class="profile profile-arya">
+				<div class="portrait-wrap">
+					<img class="portrait" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=85" alt="Foto profil Arya" loading="lazy">
+					<span class="portrait-index">02 / 02</span>
+				</div>
+				<div class="profile-content">
+					<div class="profile-heading">
+						<div>
+							<p class="profile-label">SI PENUH IDE</p>
+							<h2>Arya<span class="name-dot">.</span></h2>
+						</div>
+						<span class="profile-mark" aria-hidden="true">A</span>
+					</div>
+					<p class="profile-summary">Pribadi yang kreatif dan aktif, senang mencoba pengalaman baru bersama teman-teman.</p>
+					<dl class="quick-facts">
+						<div><dt>Umur</dt><dd>18 tahun</dd></div>
+						<div><dt>Domisili</dt><dd>Nias, Indonesia</dd></div>
+					</dl>
+					<div class="extra-details" id="detail-arya" hidden>
+						<dl class="detail-list">
+							<div><dt>Hobi</dt><dd>Fotografi, bermain olahraga</dd></div>
+							<div><dt>Cita-cita</dt><dd>Menjadi desainer kreatif</dd></div>
+							<div><dt>Motto</dt><dd>Jangan takut mencoba sesuatu yang baru.</dd></div>
+						</dl>
+					</div>
+					<button class="detail-button" type="button" aria-expanded="false" aria-controls="detail-arya">
+						<span>Lihat biodata</span><span class="button-icon" aria-hidden="true">+</span>
+					</button>
+				</div>
+			</article>
+		</section>
+
+		<footer class="site-footer">
+			<span>DIBUAT DENGAN CERITA</span>
+			<span>&copy; <span id="current-year"></span> H &amp; A</span>
+		</footer>
+	</main>
+</body>
+</html>
